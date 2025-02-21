@@ -1,0 +1,111 @@
+body {
+  background-color: #ffffff;
+  color: #000000;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.bg-dark {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.navbar {
+  background-color: #f8f9fa;
+  transition: background-color 0.3s ease-in-out;
+}
+
+body.bg-dark .navbar {
+  background-color: #343a40;
+}
+
+.navbar .nav-link {
+  color: #000000;
+  transition: color 0.3s ease;
+}
+
+body.bg-dark .navbar .nav-link {
+  color: #ffffff;
+}
+
+.responsive-container {
+  max-width: 800px; 
+  width: 100%;
+  margin: auto;
+}
+
+@media (max-width: 768px) {
+  .responsive-container {
+    max-width: 95%;
+  }
+}
+
+textarea {
+  background-color: #1e1e1e;
+  color: #fff;
+  border: 1px solid #444;
+  border-radius: 6px;
+  padding: 12px;
+}
+
+textarea:focus {
+  border-color: #67a7e6;
+}
+
+.btn {
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+button {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+/* Light Mode (Default) */
+body {
+  background-color: #ffffff;
+  color: #000000;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Dark Mode (When Class is Applied to <html>) */
+html.dark-mode body {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+html.dark-mode .navbar {
+  background-color: #222 !important;
+}
+
+html.dark-mode textarea,
+html.dark-mode .form-control {
+  background-color: #333;
+  color: #fff;
+  border: 1px solid #555;
+}
+
+html.dark-mode .btn-outline-dark {
+  background-color: #333;
+  color: white;
+  border: 1px solid white;
+}
+
+html.dark-mode .btn-outline-dark:hover {
+  background-color: #444;
+}
+
+/* Smooth transition for all elements */
+* {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Logo Styling */
+.app-Logo1 {
+  width: 120px; /* Adjust size */
+  height: auto;
+  display: block;
+}
